@@ -1,0 +1,11 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Local data and uploads
+uploads/
+vectorstores/
+
+# Environment variables
+.env
