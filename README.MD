@@ -1,5 +1,4 @@
 
-````markdown
 # Synapse
 
 **Transforming documents into intelligent conversations through advanced AI.**
