@@ -1,0 +1,5 @@
+# This is a template file. 
+# Copy this to a new file named `phi3.Modelfile` and replace the path below
+# with the absolute path to YOUR downloaded .gguf model file.
+
+FROM /path/to/your/downloaded-model.gguf

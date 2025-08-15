@@ -32,7 +32,7 @@ def get_qa_chain():
         embedding_function=embedding_function
     )
     retriever = db.as_retriever()
-    llm = Ollama(model="phi3:mini", temperature=0)
+    llm = Ollama(model="phi3-local", temperature=0)
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",

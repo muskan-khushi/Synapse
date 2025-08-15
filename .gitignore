@@ -5,3 +5,9 @@
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Ignore large model files
+*.gguf
+
+# Ignore the local, user-specific Modelfile
+phi3.Modelfile
