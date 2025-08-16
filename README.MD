@@ -98,6 +98,16 @@ Here’s how Synapse works under the hood:
         │  Citations      │
         └─────────────────┘
 ```
+## 🌍 Deployment
+
+Synapse was deployed using **ngrok**, tunneling the local FastAPI backend to the web.  
+This meant the app was accessible publicly through a temporary URL — but only as long as my system was running.  
+
+⚡ It wasn’t production-grade hosting, but it made Synapse come alive for real-time demos.  
+A reminder that **AI isn’t just about models — it’s about the entire pipeline, from embeddings to deployment**.  
+
+> For long-term usage, consider deploying with **Docker + cloud hosting** (AWS, GCP, Railway, etc.).
+
 
 ---
 
