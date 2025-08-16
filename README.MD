@@ -123,7 +123,7 @@ A reminder that **AI isn’t just about models — it’s about the entire pipel
 
 ### **2. Clone & Setup**
 ```bash
-git clone https://github.com/your-username/synapse.git
+git clone https://github.com/muskan-khushi/Synapse
 cd synapse
 ```
 
