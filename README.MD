@@ -1,194 +1,226 @@
-# ✨ **Synapse**
-*Where Documents Come Alive*
-
 <div align="center">
 
+# ✨ Synapse  
+*Where Documents Come Alive* 🌌  
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg?style=for-the-badge&labelColor=1a1a1a)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=1a1a1a)](https://www.typescriptlang.org/)
-[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=1a1a1a&labelColor=1a1a1a)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=1a1a1a)](https://fastapi.tiangolo.com/)
+[![TypeScript](https://img.shields.io/badge/Frontend-Next.js-3178C6?style=for-the-badge&logo=next.js&logoColor=white&labelColor=1a1a1a)](https://nextjs.org/)
+[![Python](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=1a1a1a)](https://fastapi.tiangolo.com/)
+[![AI](https://img.shields.io/badge/AI-RAG%20Pipeline-magenta?style=for-the-badge&logo=openai&logoColor=white&labelColor=1a1a1a)](#)
 
-**The Art of Intelligent Document Conversation**
-
-*Transforming static PDFs into dynamic dialogues through sophisticated AI*
+> **The Art of Intelligent Document Conversation**  
+> Static PDFs → Living Dialogues ✨
 
 </div>
 
 ---
 
-## 🌟 **The Vision**
+## 🌌 Vision
 
-Synapse represents the evolution of document interaction—where the traditional boundaries between reader and content dissolve into fluid, intelligent conversation. Every PDF becomes a knowledgeable companion, ready to discuss, explain, and illuminate its contents with the precision of a scholar and the accessibility of a friend.
+What if your documents could **speak back**?  
+Synapse transforms static files into **conversational companions**.  
 
-Built on cutting-edge Retrieval-Augmented Generation technology, Synapse doesn't just process documents—it understands them, contextualizes them, and makes them conversational.
+Instead of scrolling endlessly, you ask questions like you would to a colleague:  
+- *“Summarize section 2 in three lines.”*  
+- *“Compare results from table 3 with the conclusion.”*  
+- *“What assumptions are hidden in the methodology?”*  
 
----
+Behind this, the system runs **Retrieval-Augmented Generation (RAG)**:  
+1. Splits the document into small **chunks** 📄  
+2. Embeds them into a **vector space** 🌐 (where meaning is geometry)  
+3. Retrieves the **closest knowledge** for your query 🔍  
+4. Feeds both **your question + retrieved chunks** into an **LLM** 🧠  
 
-## 💫 **Distinctive Capabilities**
-
-### 🧠 **Intelligent Document Processing**
-Advanced semantic chunking transforms your PDFs into contextually-aware knowledge graphs, preserving meaning while enabling lightning-fast retrieval.
-
-### 💬 **Natural Conversation Flow**
-Experience document interaction reimagined—ask questions as naturally as you would speak to a colleague who has thoroughly studied your material.
-
-### 🔍 **Precision Source Attribution**
-Every insight is meticulously traced back to its origin, with exact page references and contextual snippets that ensure complete transparency.
-
-### ⚡ **Enterprise-Grade Performance**
-Architected for scale with clean separation of concerns, async processing, and production-ready deployment patterns.
+The answer is **grounded, contextual, and transparent**.  
+Not AI hallucination — but **AI amplified by retrieval**.
 
 ---
 
-## 🎨 **Technology Craftsmanship**
+## 🌟 Features
 
-*Powered by a carefully curated stack of premium technologies*
-
-| **Domain** | **Excellence** |
-|:-----------|:---------------|
-| **Frontend Artistry** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) |
-| **Backend Mastery** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/Python-FFD43B?style=flat-square&logo=python&logoColor=black) |
-| **AI Intelligence** | ![LangChain](https://img.shields.io/badge/LangChain-FF6B6B?style=flat-square) ![Ollama](https://img.shields.io/badge/Ollama-4A90E2?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square) |
+- 📄 **PDF Uploads** → Any report, research, policy, or notes.  
+- 💬 **Natural Language Q&A** → Just ask, no syntax needed.  
+- 🔍 **Source Transparency** → Exact page + snippet citations.  
+- ⚡ **Local & Fast** → Privacy-first, no external API calls.  
+- 🎨 **Elegant UI** → Next.js + Tailwind design, sleek & minimal.  
+- 🧠 **Configurable AI** → Swap models, tweak chunk size, tune temperature.  
 
 ---
 
-## 🚀 **Elegant Installation**
+## 🧠 Technology Craftsmanship
 
-### **Prerequisites**
-- Node.js 18+ (LTS recommended)
-- Python 3.10+
-- Ollama runtime
-- 4GB+ available RAM
+| **Layer**           | **What We Use**                                                                                                                                                              | **Why It Matters**                                                                                   |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **Frontend** 🎨      | Next.js · React · TypeScript · TailwindCSS                                                                                                                                   | Smooth, modern, responsive UI.                                                                      |
+| **Backend** 🔧       | FastAPI (Python)                                                                                                                                                             | Lightweight, async API server for handling queries + embeddings.                                     |
+| **AI Core** 🧠       | LangChain · Ollama · Phi-3 / LLaMA models                                                                                                                                   | Orchestrates retrieval + generation. Models run locally via Ollama.                                  |
+| **Vector DB** 📊     | ChromaDB                                                                                                                                                                     | Stores embeddings of document chunks, enabling fast semantic search.                                 |
+| **Embeddings** 🔮    | Sentence Transformers / Instructor models                                                                                                                                   | Converts text → vectors in high-dimensional space (meaningful proximity).                            |
 
-### **🎯 Step 1: Acquire the Source**
+---
+
+## 🏛️ Architecture
+
+Here’s how Synapse works under the hood:  
+
+```
+        ┌──────────────┐
+        │   PDF Upload │ 📄
+        └───────┬──────┘
+                │
+        ┌───────▼─────────┐
+        │   Preprocessor  │ ✂️
+        │ (chunk + clean) │
+        └───────┬─────────┘
+                │
+        ┌───────▼─────────┐
+        │  Embeddings     │ 🔮
+        │ (Vectorization) │
+        └───────┬─────────┘
+                │
+        ┌───────▼─────────┐
+        │  Vector DB      │ 📊
+        │   (Chroma)      │
+        └───────┬─────────┘
+                │
+        ┌───────▼─────────┐
+ Query  │   Retriever     │ 🔍
+  💬 ──▶│ (find relevant) │
+        └───────┬─────────┘
+                │
+        ┌───────▼─────────┐
+        │   LLM Engine    │ 🧠
+        │ (Phi-3 / LLaMA) │
+        └───────┬─────────┘
+                │
+        ┌───────▼─────────┐
+        │  Response +     │ ✨
+        │  Citations      │
+        └─────────────────┘
+```
+
+---
+
+## 🚀 Quickstart
+
+### **1. Prerequisites**
+- Node.js ≥ 18  
+- Python ≥ 3.10  
+- [Ollama](https://ollama.com/) installed  
+- 4GB+ RAM  
+
+---
+
+### **2. Clone & Setup**
 ```bash
 git clone https://github.com/your-username/synapse.git
 cd synapse
 ```
 
-### **🐍 Step 2: Backend Preparation**
+#### Backend
 ```bash
 cd server
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate   # (Mac/Linux)
+.\venv\Scripts\activate    # (Windows)
+
 pip install -r requirements.txt
 ```
 
-### **⚛️ Step 3: Frontend Configuration**
+#### Frontend
 ```bash
 cd ../client
 npm install
 ```
 
-### **🧠 Step 4: AI Model Setup**
+---
 
-**Recommended Approach** *(Most Reliable)*
+### **3. AI Model Setup**
+
+#### Option A: Custom Local Model (Recommended)
 ```bash
-# 1. Download Phi-3 Mini (3.92 GB)
-# Visit: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf
-# Download: Phi-3-mini-4k-instruct-q4.gguf
-
-# 2. Configure your model
+# Download Phi-3 Mini (3.9 GB) from HuggingFace
 cp phi3.Modelfile.example phi3.Modelfile
-# Edit phi3.Modelfile with absolute path to downloaded model
-
-# 3. Create local model
+# Update file path to gguf model
 ollama create phi3-local -f phi3.Modelfile
 ```
 
-**Alternative Quick Setup**
+#### Option B: Quick Start
 ```bash
 ollama pull phi3:mini
-# Update server/core.py to use "phi3:mini" instead of "phi3-local"
 ```
 
-### **🌟 Step 5: Launch Experience**
+---
 
-**Backend Service** *(Terminal 1)*
+### **4. Run Synapse**
+
+**Backend (Terminal 1):**
 ```bash
 cd server
-source venv/bin/activate
 uvicorn main:app --reload --port 8000
 ```
 
-**Frontend Application** *(Terminal 2)*
+**Frontend (Terminal 2):**
 ```bash
 cd client
 npm run dev
 ```
 
-Navigate to `http://localhost:3000` and witness intelligence unfold.
+🌐 Visit → [http://localhost:3000](http://localhost:3000)  
 
 ---
 
-## 🏛️ **Architecture Overview**
+## 🎯 Usage Examples
 
-```
-synapse/
-├── 🎨 client/                    # Next.js Frontend Excellence
-│   ├── app/                      # Application core
-│   ├── components/               # Reusable UI elements
-│   └── lib/                      # Utility functions
-├── 🔧 server/                    # FastAPI Backend Engine
-│   ├── main.py                   # API orchestration
-│   ├── core.py                   # RAG implementation
-│   └── models/                   # Data structures
-├── 📚 docs/                      # Documentation
-└── 🧪 tests/                     # Quality assurance
-```
+Ask your documents like a friend:  
+- “Summarize this in 5 bullet points.”  
+- “Which section mentions neural networks?”  
+- “Explain section 4 as if I’m 12 years old.”  
+- “Compare methodology with conclusion.”  
+
+Every answer → with **citations & context** 🔍.  
 
 ---
 
-## 🎯 **Experience Patterns**
+## 🔧 Configuration
 
-### **Document Upload**
-Drag and drop your PDF or browse to select. Watch as Synapse intelligently processes your content with a beautiful progress indicator.
-
-### **Intelligent Querying**
-- *"What are the key findings in this research?"*
-- *"Explain the methodology used in section 3"*
-- *"Compare the conclusions with the introduction"*
-- *"Summarize this document in bullet points"*
-
-### **Source Verification**
-Each response includes precise page citations and relevant excerpts, ensuring you can verify and explore further with confidence.
-
----
-
-## 🔧 **Advanced Configuration**
-
-Fine-tune your Synapse experience through environment variables:
+Tune your AI in `server/.env`:
 
 ```env
-# server/.env
-OLLAMA_BASE_URL=http://localhost:11434
 MODEL_NAME=phi3-local
+OLLAMA_BASE_URL=http://localhost:11434
 CHUNK_SIZE=1000
 TEMPERATURE=0.1
 ```
 
----
-
-## 🎭 **Philosophy & Credits**
-
-Synapse embodies the belief that technology should be both powerful and beautiful. We've crafted every component with attention to detail, from the elegant user interface to the sophisticated AI pipeline.
-
-**Acknowledgments**: Built with appreciation for the open-source community and the brilliant minds behind LangChain, FastAPI, Next.js, and the Phi-3 model.
+- `CHUNK_SIZE`: how much text per vector slice  
+- `TEMPERATURE`: creativity of responses (0 = factual, 1 = creative)  
 
 ---
 
-## 📜 **License**
+## 🌌 Philosophy
 
-MIT License - Crafted for sharing, building, and innovation.
+Synapse is not just code — it’s **a belief**.  
+That documents are meant to be **alive, not static**.  
+That **AI should be transparent, not black-boxed**.  
+That embeddings + neural nets can feel almost *poetic* in how they connect meaning across dimensions.  
+
+It is research, but it is also art.  
+A bridge between **mathematical rigor** and **dreamy interaction** ✨.  
+
+---
+
+## 📜 License
+
+MIT License — free to use, remix, and explore.  
 
 ---
 
 <div align="center">
 
-**✨ Crafted with Precision • Designed for Intelligence • Built for the Future ✨**
+✨ Crafted with curiosity & code by Muskan ✨  
+*Turning documents into conversations* 🌸  
 
-*Experience the sophisticated art of document conversation*
-
-![GitHub Stars](https://img.shields.io/github/stars/your-username/synapse?style=social)
+![Stars](https://img.shields.io/github/stars/your-username/synapse?style=social)
 
 </div>
